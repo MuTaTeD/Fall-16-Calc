@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bouncing_ball_00" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_01" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_02" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_03" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_04" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_05" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_06" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_07" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_08" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_09" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_10" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_11" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_12" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_13" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_14" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_15" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_16" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_17" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_18" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_19" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_20" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_21" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_22" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_23" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_24" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_25" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_26" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_27" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_28" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_29" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_30" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_31" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_32" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_33" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_34" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_35" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_36" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_37" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_38" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_39" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_40" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_41" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_42" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_43" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_44" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_45" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_46" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_47" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_48" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_49" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_50" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_51" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_52" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_53" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_54" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_55" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_56" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_57" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_58" android:duration="30" />
+    <item android:drawable="@drawable/bouncing_ball_59" android:duration="30" />
+
+
+</animation-list>
