@@ -33,16 +33,18 @@ import java.util.ArrayList;
 
 import android.graphics.Typeface;
 
-public class RecipeAdapter extends BaseAdapter {
+public class AdvRecipeAdapter extends BaseAdapter
+{
 
-	public static final String TAG = RecipeAdapter.class.getSimpleName();
+	public static final String TAG = AdvRecipeAdapter.class.getSimpleName();
 	static int createCount = 0;
 
 	private Context mContext;
 	private LayoutInflater mInflater;
-	private ArrayList < Recipe > mDataSource;
+	private ArrayList<Recipe> mDataSource;
 
-	public RecipeAdapter(Context context, ArrayList < Recipe > items) {
+	public AdvRecipeAdapter(Context context, ArrayList<Recipe> items)
+	{
 		mContext = context;
 		mDataSource = items;
 		mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -54,7 +56,8 @@ public class RecipeAdapter extends BaseAdapter {
 	 * @return Count of items.
 	 */
 	@Override
-	public int getCount() {
+	public int getCount()
+	{
 		return mDataSource.size();
 	}
 
@@ -66,7 +69,8 @@ public class RecipeAdapter extends BaseAdapter {
 	 * @return The data at the specified position.
 	 */
 	@Override
-	public Object getItem(int position) {
+	public Object getItem(int position)
+	{
 		return mDataSource.get(position);
 	}
 
@@ -77,11 +81,11 @@ public class RecipeAdapter extends BaseAdapter {
 	 * @return The id of the item at the specified position.
 	 */
 	@Override
-	public long getItemId(int position) {
+	public long getItemId(int position)
+	{
 		return position;
 	}
 
-	//  UN-OPTIMISED IMPLEMENTATION OF getView()
 	/**
 	 * Get a View that displays the data at the specified position in the data set. You can either
 	 * create a View manually or inflate it from an XML layout file. When the View is inflated, the
@@ -101,19 +105,37 @@ public class RecipeAdapter extends BaseAdapter {
 	 * @return A View corresponding to the data at the specified position.
 	 */
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(int position, View convertView, ViewGroup parent)
+	{
+		ViewHolder holder;
 
-		// Get view for row item
-		mInflater = (LayoutInflater) mContext
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View rowView = mInflater.inflate(R.layout.list_item_complex, parent, false);
-		Log.d(TAG, "CreateCount = " + ++createCount);
+		// check if the view already exists if so, no need to inflate and findViewById again!
+		if(convertView == null)
+		{
+			// Inflate the custom row layout from your XML.
+			convertView = mInflater.inflate(R.layout.list_item_complex, parent, false);
+
+			// create a new "Holder" with subviews
+			holder = new ViewHolder();
+			holder.thumbnailImageView = (ImageView) convertView.findViewById(R.id.recipe_list_thumbnail);
+			holder.titleTextView = (TextView) convertView.findViewById(R.id.recipe_list_title);
+			holder.subtitleTextView = (TextView) convertView.findViewById(R.id.recipe_list_subtitle);
+			holder.detailTextView = (TextView) convertView.findViewById(R.id.recipe_food_type);
+
+			// hang onto this holder for future recyclage
+			convertView.setTag(holder);
+			Log.d(TAG, "CreateCount = " + ++createCount);
+		} else
+		{
+			// skip all the expensive inflation/findViewById and just get the holder you already made
+			holder = (ViewHolder) convertView.getTag();
+		}
 
 		// Get relevant subviews of row view
-		TextView titleTextView = (TextView) rowView.findViewById(R.id.recipe_list_title);
-		TextView subtitleTextView = (TextView) rowView.findViewById(R.id.recipe_list_subtitle);
-		TextView foodTypeTextView = (TextView) rowView.findViewById(R.id.recipe_food_type);
-		ImageView thumbnailImageView = (ImageView) rowView.findViewById(R.id.recipe_list_thumbnail);
+		TextView titleTextView = holder.titleTextView;
+		TextView subtitleTextView = holder.subtitleTextView;
+		TextView detailTextView = holder.detailTextView;
+		ImageView thumbnailImageView = holder.thumbnailImageView;
 
 		//Get corresponding recipe for row
 		Recipe recipe = (Recipe) getItem(position);
@@ -121,7 +143,7 @@ public class RecipeAdapter extends BaseAdapter {
 		// Update row view's textviews to display recipe information
 		titleTextView.setText(recipe.title);
 		subtitleTextView.setText(recipe.description);
-		foodTypeTextView.setText(recipe.foodType);
+		detailTextView.setText(recipe.foodType);
 
 		if (position % 2 == 0)
 		{
@@ -140,9 +162,17 @@ public class RecipeAdapter extends BaseAdapter {
 		subtitleTextView.setTypeface(subtitleTypeFace);
 		Typeface detailTypeFace = Typeface.createFromAsset(mContext.getAssets(),
 				"fonts/Quicksand-Bold.otf");
-		foodTypeTextView.setTypeface(detailTypeFace);
-		foodTypeTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.colorRed));
+		detailTextView.setTypeface(detailTypeFace);
+		detailTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.colorRed));
 
-		return rowView;
+		return convertView;
+	}
+
+	private static class ViewHolder
+	{
+		public TextView titleTextView;
+		public TextView subtitleTextView;
+		public TextView detailTextView;
+		public ImageView thumbnailImageView;
 	}
 }

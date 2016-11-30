@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnComplexListView"
-                android:text="Complex Activity"
+                android:text="Complex List Activity"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
@@ -91,7 +91,17 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:id="@+id/btnAdvComplexListView"
+                android:text="Adv Complex List Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNotesApp"
+                android:text="Notes Activity"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"

@@ -38,9 +38,9 @@ import android.content.Context;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class ComplexListActivity extends AppCompatActivity {
+public class AdvComplexListActivity extends AppCompatActivity {
 
-	public static final String TAG = ComplexListActivity.class.getSimpleName();
+	public static final String TAG = AdvComplexListActivity.class.getSimpleName();
 
 	private ListView mListView;
 
@@ -59,7 +59,7 @@ public class ComplexListActivity extends AppCompatActivity {
 		final ArrayList<Recipe> records = parseRecords(completeData);
 
 		// Create adapter
-		RecipeAdapter adapter = new RecipeAdapter(context, records);
+		AdvRecipeAdapter adapter = new AdvRecipeAdapter(context, records);
 
 		// Create list view
 

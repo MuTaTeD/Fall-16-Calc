@@ -69,6 +69,12 @@ public class IndexActivity extends AppCompatActivity
 			case R.id.btnComplexListView:
 				theIntent = new Intent(this, ComplexListActivity.class);
 				break;
+			case R.id.btnAdvComplexListView:
+				theIntent = new Intent(this, AdvComplexListActivity.class);
+				break;
+			case R.id.btnNotesApp:
+				theIntent = new Intent(this, NotesActivity.class);
+				break;
 			default:
 				break;
 		}
