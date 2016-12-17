@@ -75,6 +75,12 @@ public class IndexActivity extends AppCompatActivity
 			case R.id.btnNotesApp:
 				theIntent = new Intent(this, NotesActivity.class);
 				break;
+			case R.id.btnThreadsActivity:
+				theIntent = new Intent(this, ThreadActivity.class);
+				break;
+			case R.id.btnASyncTaskActivity:
+				theIntent = new Intent(this, ASyncTaskActivity.class);
+				break;
 			default:
 				break;
 		}

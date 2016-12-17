@@ -109,7 +109,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:id="@+id/btnThreadsActivity"
+                android:text="Threads Activity"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
@@ -117,7 +118,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6"
+                android:id="@+id/btnASyncTaskActivity"
+                android:text="ASync Activity"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
