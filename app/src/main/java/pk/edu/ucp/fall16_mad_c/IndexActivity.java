@@ -81,6 +81,18 @@ public class IndexActivity extends AppCompatActivity
 			case R.id.btnASyncTaskActivity:
 				theIntent = new Intent(this, ASyncTaskActivity.class);
 				break;
+			case R.id.btnDatabaseActivity:
+				theIntent = new Intent(this, DatabaseActivity.class);
+				break;
+			case R.id.btnCameraActivity:
+				theIntent = new Intent(this, CameraActivity.class);
+				break;
+			case R.id.btnAudioActivity:
+				theIntent = new Intent(this, AudioActivity.class);
+				break;
+			case R.id.btnVideoActivity:
+				theIntent = new Intent(this, VideoActivity.class);
+				break;
 			default:
 				break;
 		}

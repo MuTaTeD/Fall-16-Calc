@@ -124,9 +124,42 @@
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
                 />
-
-            btnComplexListView
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDatabaseActivity"
+                android:text="Database Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCameraActivity"
+                android:text="Camera Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAudioActivity"
+                android:text="Audio Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVideoActivity"
+                android:text="Video Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
         </LinearLayout>
     </ScrollView>
 

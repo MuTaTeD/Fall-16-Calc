@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="pk.edu.ucp.fall16_mad_c">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,6 +44,14 @@
         <activity android:name=".ThreadActivity">
         </activity>
         <activity android:name=".ASyncTaskActivity">
+        </activity>
+        <activity android:name=".DatabaseActivity">
+        </activity>
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity android:name=".AudioActivity">
+        </activity>
+        <activity android:name=".VideoActivity">
         </activity>
     </application>
 
