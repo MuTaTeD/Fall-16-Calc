@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="pk.edu.ucp.fall16_mad_c">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -52,6 +56,18 @@
         <activity android:name=".AudioActivity">
         </activity>
         <activity android:name=".VideoActivity">
+        </activity>
+        <activity android:name=".SurfaceClassActivity">
+        </activity>
+        <activity android:name=".SurfaceAnimationActivity">
+        </activity>
+        <activity android:name=".DBAssignment">
+        </activity>
+        <activity android:name=".SensorActivity">
+        </activity>
+        <activity android:name=".FilteredSensorActivity">
+        </activity>
+        <activity android:name=".LocationActivity">
         </activity>
     </application>
 

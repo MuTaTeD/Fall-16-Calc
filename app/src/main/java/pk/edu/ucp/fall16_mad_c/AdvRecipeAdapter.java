@@ -163,7 +163,7 @@ public class AdvRecipeAdapter extends BaseAdapter
 		Typeface detailTypeFace = Typeface.createFromAsset(mContext.getAssets(),
 				"fonts/Quicksand-Bold.otf");
 		detailTextView.setTypeface(detailTypeFace);
-		detailTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.colorRed));
+		detailTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.red));
 
 		return convertView;
 	}

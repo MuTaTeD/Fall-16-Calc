@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SurfaceView;
 import android.view.View;
 
 public class IndexActivity extends AppCompatActivity
@@ -92,6 +93,24 @@ public class IndexActivity extends AppCompatActivity
 				break;
 			case R.id.btnVideoActivity:
 				theIntent = new Intent(this, VideoActivity.class);
+				break;
+			case R.id.btnSurfaceAnimationActivity:
+				theIntent = new Intent(this, SurfaceAnimationActivity.class);
+				break;
+			case R.id.btnSurfaceViewActivity:
+				theIntent = new Intent(this, SurfaceClassActivity.class);
+				break;
+//			case R.id.btnAssignTextActivity:
+//				theIntent = new Intent(this, DBAssignment.class);
+//				break;
+			case R.id.btnSensorActivity:
+				theIntent = new Intent(this, SensorActivity.class);
+				break;
+			case R.id.btnFilteredSensorActivity:
+				theIntent = new Intent(this, FilteredSensorActivity.class);
+				break;
+			case R.id.btnLocationActivity:
+				theIntent = new Intent(this, LocationActivity.class);
 				break;
 			default:
 				break;

@@ -141,7 +141,7 @@ public class RecipeAdapter extends BaseAdapter {
 		Typeface detailTypeFace = Typeface.createFromAsset(mContext.getAssets(),
 				"fonts/Quicksand-Bold.otf");
 		foodTypeTextView.setTypeface(detailTypeFace);
-		foodTypeTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.colorRed));
+		foodTypeTextView.setTextColor(android.support.v4.content.ContextCompat.getColor(mContext, R.color.red));
 
 		return rowView;
 	}

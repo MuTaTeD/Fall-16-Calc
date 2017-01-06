@@ -160,6 +160,60 @@
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
                 />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSurfaceAnimationActivity"
+                android:text="Surface Animation Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSurfaceViewActivity"
+                android:text="SurfaceView Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/btnAssignTextActivity"-->
+                <!--android:text="SurfaceView Activity"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:onClick="handleButtonAction"-->
+                <!--/>-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSensorActivity"
+                android:text="Sensor Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFilteredSensorActivity"
+                android:text="Filtered Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLocationActivity"
+                android:text="Location Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
         </LinearLayout>
     </ScrollView>
 
