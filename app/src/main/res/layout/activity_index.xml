@@ -214,6 +214,24 @@
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
                 />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInternetActivity"
+                android:text="Internet Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnButtonsActivity"
+                android:text="Buttons Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
         </LinearLayout>
     </ScrollView>
 

@@ -112,6 +112,12 @@ public class IndexActivity extends AppCompatActivity
 			case R.id.btnLocationActivity:
 				theIntent = new Intent(this, LocationActivity.class);
 				break;
+			case R.id.btnInternetActivity:
+				theIntent = new Intent(this, InternetActivity.class);
+				break;
+			case R.id.btnButtonsActivity:
+				theIntent = new Intent(this, ButtonsActivity.class);
+				break;
 			default:
 				break;
 		}
