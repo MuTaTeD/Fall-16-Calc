@@ -74,6 +74,8 @@
         </activity>
         <activity android:name=".ButtonsActivity">
         </activity>
+        <activity android:name=".ComplexNetworkActivity">
+        </activity>
     </application>
 
 </manifest>

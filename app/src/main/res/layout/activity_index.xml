@@ -232,6 +232,16 @@
                 android:layout_centerHorizontal="true"
                 android:onClick="handleButtonAction"
                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnComplexNetworkActivity"
+                android:text="Complex Network Activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="handleButtonAction"
+                />
         </LinearLayout>
     </ScrollView>
 
